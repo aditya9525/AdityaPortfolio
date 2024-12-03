@@ -1,0 +1,15 @@
+.resume {
+    background-color: #40138f;
+    padding: 8px 15px;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.fa-solid {
+    font-size: 13px;
+}

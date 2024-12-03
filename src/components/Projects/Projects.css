@@ -1,0 +1,70 @@
+.project-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    padding: 50px 40px;
+    align-items: center;
+
+}
+
+.project-heading{
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.project-heading span{
+    color: #40138f;
+}
+
+.project-cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    gap: 20px;
+}
+
+.project-card{
+    background-color:#fff;
+    width: 270px;
+    cursor: pointer;
+    padding: 15px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border-radius: 10px;
+
+}
+.project-card img{
+    width: 240px;
+    border-radius: 10px;
+}
+
+.project-card h4{
+    font-size: 1.17rem;
+}
+
+.project-card p{
+    color: rgb(121, 121, 121);
+}
+
+
+.project-card .icons i{
+    font-size: 35px;  
+    margin-top: 10px;
+    margin-right: 25px;
+    color: rgb(121, 121, 121);  
+}
+
+/* .project-card:hover{
+    
+} */
+@media (max-width: 480px){
+    .project-heading, .project-heading span{
+        font-size: 1.5rem;
+        font-weight: 800;
+
+    }
+}

@@ -1,0 +1,200 @@
+nav{
+    position: fixed;
+    width: 100vw;
+    height: 60px;
+    background-color: rgb(243, 243, 243);
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+.navbar{
+    width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.logo{
+    color: #40138f;
+    text-transform: uppercase;
+}
+
+.logoa{
+    cursor: pointer;
+}
+
+.nav-items ul{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    /* transition: all 0.60s ease-in; */
+}
+
+.nav-items ul li{
+    list-style: none;
+    
+}
+
+
+.nav-items ul li a{
+    text-decoration: none;
+    color: rgb(100, 98, 98);
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 0px 20px 0px 20px;
+    transition: all 0.3s;
+}
+
+.nav-items ul li a:hover{
+    color: rgb(56, 57, 57);
+}
+.hambrg{
+    display: none;
+    cursor: pointer;
+}
+
+.xmark{
+    display: none;
+    cursor: pointer;
+}
+
+
+.action{
+    display: none;
+}
+
+.icons-sol{
+    width: 90%;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-top: 30px;
+}
+.icons-sol a i{
+    font-size: 24px;
+}
+.icons-sol a .fa-github{
+    color: black;   
+}
+.icons-sol a .fa-linkedin{
+    color: #0077B5;
+}
+
+.gradient-text {
+    background: linear-gradient(90deg,
+            rgb(66, 133, 244),
+            /* Blue */
+            rgb(15, 157, 88),
+            /* Green */
+            rgb(244, 180, 0),
+            /* Yellow */
+            rgb(219, 68, 55)
+            /* Red */
+        );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 900px) {
+    nav {
+        height: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+        justify-content: space-between;
+    }
+
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+    .nav-items{
+        display: none;
+    }
+    .action{
+        display: flex;
+    }
+
+    .action ul{
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        box-shadow: 0px 0px 20px rgba(37, 37, 37, 0.379);
+        position: absolute;
+        gap: 40px;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        padding-top: 50px;
+        padding-left: 30px;
+        width: 60vw;
+        transition: all .3s;
+        /* display: none; */
+    }
+    .action ul li{
+        width: 100%;
+    }
+    .action ul li .anch{
+        /* display: inline-block;
+        width: 100%; */
+        color: #999;
+        cursor: pointer;
+        font-size: 24px;
+        list-style: none;
+        margin: 30px 0;
+    
+    }
+
+    .hambrg{
+        display: flex;
+        position: absolute;
+        right: 10px;
+        top:7px;
+    }
+    .xmark{
+        display: flex;
+        
+        /* border-radius: 50%; */
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: 20px;
+        top: 10px;
+    }
+    .xmark i{
+        color: #40138f;
+        font-size: 24px;
+        
+    }
+
+
+    .nav-items ul li a {
+        font-size: 14px;
+        margin: 5px 0;
+    }
+
+    .hambrg i{
+        font-size: 24px;
+        color: #40138f;
+    }
+    
+}
